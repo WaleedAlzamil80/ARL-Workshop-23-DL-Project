@@ -13,7 +13,7 @@ The goal is to build a Neural Network Model using [Pytorch](https://pytorch.org/
 - In the `model.py` file You will need to add the architecture of your model.
 - Your Model must be save using `torch.save(model, "model.pth")` and must be in the same directory.
 - Download the Simulator from here [windows-64](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f3a4_simulator-windows-64/simulator-windows-64.zip) [windows-32](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f4b6_simulator-windows-32/simulator-windows-32.zip) [Linux](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f0f7_simulator-linux/simulator-linux.zip) [Mac](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f290_simulator-macos/simulator-macos.zip).
-- You will need to collect your own data from the simulator as illustrated [Here](https://drive.google.com/file/d/12H6iWTMtMLTnDe89tX1HcXHGgKKbQZbg/view?usp=drive_link).
+- You will need to collect your own data from the simulator as illustrated [Here](https://drive.google.com/file/d/12H6iWTMtMLTnDe89tX1HcXHGgKKbQZbg/view?usp=drive_link) and use it to train your own model.
 
 # How to run
 After Clonning this repo and you have done all the previous tasks Open the terminal and run 
