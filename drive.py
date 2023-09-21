@@ -49,18 +49,11 @@ def telemetry(sid, data):
             image_filename = os.path.join(args.image_folder, timestamp)
             image.save('{}.jpg'.format(image_filename))
         try:
-    
-            # predict the steering angle for the image
-            # steering_angle = float(model.predict(image, batch_size=1))
-            # lower the throttle as the speed increases
-            # if the speed is above the current speed limit, we are on a downhill.
-            # make sure we slow down first and then go back to the original max speed.
             # Convert PIL Image to PyTorch Tensor and apply transformations if any
 
             transform = transforms.Compose([transforms.ToTensor()])
             image = transform(image).unsqueeze(0).to(device)
-            # predict the steering angle for the image
-            # steering_angle = float(model.predict(image, batch_size=1))
+            
             global image_buffer 
             # Add the new image to the buffer
             image_buffer.append(image)
@@ -83,8 +76,7 @@ def telemetry(sid, data):
                     speed_limit = MIN_SPEED  # slow down
                 else:
                     speed_limit = MAX_SPEED
-                # throttle = 1.0 - steering_angle**2 - (speed/speed_limit)**2 Modified
-                throttle = float(output[0][1].item()) # Modified
+                throttle = float(output[0][1].item())
 
                 print('{} {} {}'.format(steering_angle, throttle, speed))
                 send_control(steering_angle, throttle)
