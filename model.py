@@ -1,26 +1,12 @@
 import torch
 from torch import nn
 
-def reshape_images(images: torch.Tensor) -> torch.Tensor:
-    """
-    Reshape a tensor of images to a new shape.
-
-    Args:
-    images (torch.Tensor): Input images tensor. Should be of shape (3, 3, 160, 320).
-
-    Returns:
-    torch.Tensor: The reshaped images tensor which your model will accept.
-    """
-    reshaped_images = images.reshape((3, 3, 160, 320))
-    return reshaped_images
-
-
 ## Put your Architecture here
 
 ## Here is a sample and this one not supposed to work so delete it and put your own
-class Model(nn.Module):
+class ARA_Model(nn.Module):
   def __init__(self):
-    super(Model, self).__init__()
+    super(ARA_Model, self).__init__()
 
     self.encoder = nn.Sequential( 
         nn.Conv2d(in_channels = 64, out_channels = 128, kernel_size = (7, 7), padding = 0),

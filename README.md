@@ -8,12 +8,12 @@ The goal is to build a Neural Network Model using [Pytorch](https://pytorch.org/
 
 ## What should you do??
 
-- You will need to modify the `model.py` file only
-- In the `model.py` file You will need to modify the `reshape_images` function to return the expected shape of your model as the shape returned from the simulater is `(3, C, H, W)` where `3` is the 3 images, `C` is the channels of the image, `H` is the height and `W` is the width and thus may be not your model's input shape.
-- In the `model.py` file You will need to add the architecture of your model.
-- Your Model must be save using `torch.save(model, "model.pth")` and must be in the same directory.
+- Clone this repo.
 - Download the Simulator from here [windows-64](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f3a4_simulator-windows-64/simulator-windows-64.zip) [windows-32](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f4b6_simulator-windows-32/simulator-windows-32.zip) [Linux](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f0f7_simulator-linux/simulator-linux.zip) [Mac](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f290_simulator-macos/simulator-macos.zip).
 - You will need to collect your own data from the simulator as illustrated [Here](https://drive.google.com/file/d/12H6iWTMtMLTnDe89tX1HcXHGgKKbQZbg/view?usp=drive_link) and use it to train your own model.
+- You will need to modify the `model.py` file only
+- In the `model.py` file You will need to add the architecture of your model.
+- Your Model must be save using `torch.save(model, "model.pth")` and must be in the same directory.
 
 # How to run
 After Clonning this repo and you have done all the previous tasks Open the terminal and run 
