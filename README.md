@@ -1,10 +1,10 @@
 # Project Description
 
-In this project, we use a neural network to clone car driving behavior.  It is a supervised regression problem between the car steering angles, throttle and the road images in front of a car.  
+In this project, we use a neural network to clone car driving behaviour.  It is a supervised regression problem between the car steering angle, throttle, and the road images in front of the car.
 
-Those images were taken from three different camera angles (from the center, the left and the right of the car).  
+Those images were taken from three different camera angles (from the centre, the left, and the right of the car).
 
-The goal is to build a Neural Network Model using [Pytorch](https://pytorch.org/) Fram Work that takes the three Images and output the steering angles and the throttle the car must take
+The goal is to build a Neural Network Model using [Pytorch](https://pytorch.org/) Fram Work that takes the three Images and outputs the steering angle and the throttle the car must take
 
 ## What should you do??
 
@@ -13,17 +13,17 @@ The goal is to build a Neural Network Model using [Pytorch](https://pytorch.org/
 - You will need to collect your own data from the simulator as illustrated [Here](https://drive.google.com/file/d/12H6iWTMtMLTnDe89tX1HcXHGgKKbQZbg/view?usp=drive_link) and use it to train your own model.
 - You will need to modify the `model.py` file only
 - In the `model.py` file You will need to add the architecture of your model.
-- Your Model must be save using `torch.save(model, "model.pth")` and must be in the same directory.
+- Your Model must be saved using `torch.save(model, "model.pth")` and must be in the same directory.
 
 # How to run
-After Clonning this repo and you have done all the previous tasks Open the terminal and run 
+After Cloning this repo and you have done all the previous tasks Open the terminal and run 
 
 `python drive.py model.pth images`
  
-Then open the simulator in the Autonomus mode. Now you can see the performance of your trained model :)
+Then open the simulator in Autonomous mode. Now you can see the performance of your trained model :)
 
 # Some Issues
-maybe you will face some problem with the dependece about the `socketio` you can try the following
+maybe you will face some problems with the dependence on the `socketio` you can try the following
 ```
 pip install --upgrade python-socketio==4.6.0
 
